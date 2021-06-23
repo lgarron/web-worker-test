@@ -1,0 +1,20 @@
+{
+  "name": "web-worker-test",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgarron/web-worker-test.git"
+  },
+  "keywords": [],
+  "author": "Lucas Garron <code@garron.net>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/lgarron/web-worker-test/issues"
+  },
+  "homepage": "https://github.com/lgarron/web-worker-test#readme",
+  "type": "module",
+  "exports": {
+    "./esm-module": "./dist/esm-module/index.js",
+    "./esm-classic": "./dist/esm-module/index.js"
+  }
+}
