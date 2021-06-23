@@ -1,6 +1,6 @@
 {
   "name": "web-worker-test",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lgarron/web-worker-test.git"
@@ -15,12 +15,13 @@
   "type": "module",
   "exports": {
     "./esm-module": {
-      "import": "./dist/esm-module/index.js",
-      "types": "./dist/types.d.ts"
+      "import": "./esm-module/index.js",
+      "types": "./types.d.ts"
     },
     "./esm-classic": {
-      "import": "./dist/esm-module/index.js",
-      "types": "./dist/types.d.ts"
+      "import": "./esm-module/index.js",
+      "types": "./types.d.ts"
     }
-  }
+  },
+  "types": "./types.d.ts"
 }
