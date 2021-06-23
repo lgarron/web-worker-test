@@ -1,4 +1,6 @@
 export async function instantiateWorker() {
-  const worker = new Worker("./worker.js", { type: "module" });
+  const worker = new Worker(new URL("./worker.js", import.meta.url), {
+    type: "module",
+  });
   return worker;
 }
