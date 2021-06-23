@@ -1,6 +1,6 @@
 {
   "name": "web-worker-test",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lgarron/web-worker-test.git"
@@ -14,14 +14,25 @@
   "homepage": "https://github.com/lgarron/web-worker-test#readme",
   "type": "module",
   "exports": {
+    "./esm-classic": {
+      "import": "./esm-classic/index.js",
+      "types": "./types.d.ts"
+    },
     "./esm-module": {
       "import": "./esm-module/index.js",
       "types": "./types.d.ts"
     },
-    "./esm-classic": {
-      "import": "./esm-module/index.js",
+    "./esm-module-comlink": {
+      "import": "./esm-module-comlink/index.js",
+      "types": "./types.d.ts"
+    },
+    "./esm-semi-classic-comlink": {
+      "import": "./esm-semi-classic-comlink/index.js",
       "types": "./types.d.ts"
     }
   },
-  "types": "./types.d.ts"
+  "types": "./types.d.ts",
+  "dependencies": {
+    "comlink": "^4.3.1"
+  }
 }
